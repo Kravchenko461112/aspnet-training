@@ -10,7 +10,28 @@ public class Program
 	public static int CountVowels(string s)
 	{
 		// ИЗМЕНИТЕ КОД ЭТОГО МЕТОДА
-		return -1;
+		
+            string str ="Database is failured or damaged" ;
+            string vowels = "aeiou";
+            int count = 0;
+            if (str == null)
+            {
+                throw new ArgumentNullException("Line is NULL");
+                Console.WriteLine("Line is NULL");
+            }
+
+                for (int i = 0; i < str.Length; ++i)
+                
+                for (int j = 0; j < vowels.Length; ++j)
+                    if (
+                        
+                        str[i] == vowels[j])
+                        ++count;
+            Console.Write(count);
+            Console.ReadLine();
+
+        }
+		
 	}
 
 	// ----- ЗАПРЕЩЕНО ИЗМЕНЯТЬ КОД МЕТОДОВ, КОТОРЫЕ НАХОДЯТСЯ НИЖЕ -----
