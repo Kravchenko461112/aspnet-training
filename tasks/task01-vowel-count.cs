@@ -9,8 +9,30 @@ public class Program
 {
 	public static int CountVowels(string s)
 	{
-		// ИЗМЕНИТЕ КОД ЭТОГО МЕТОДА
-		return -1;
+		// ЭТО ИЗМЕНЁННЫЙ КОД  МЕТОДА
+		string str = "Database is failured or damaged"; // Строка в котрой считаем гласные. 
+                string vowels = "aeiou";                        // Эти гласные ищем в строке. 
+                int result = 0;                                  // Поле для хранения результата.  
+                if (str == null)
+                {
+                    throw new ArgumentNullException("Line is NULL"); // Выбрасываем исключение.
+                    Console.WriteLine("Line is NULL");               // Вывод сообщения на консоль.
+                }
+
+                for (int i = 0; i < str.Length; ++i)                 // В цикле ищем совпадения.
+
+                    for (int j = 0; j < vowels.Length; ++j)
+                        if (
+
+                            str[i] == vowels[j])
+                            ++result;                                  // Результат подсчёта
+		return result;                                         // Этот оператор возвращает число,результат работы метода,
+                                                                       // т.к. в сигнатуре указан тип возвр. значения. 
+                Console.Write(count);                                  // Вывод результата на консоль.  
+                Console.ReadLine();
+
+            }
+		
 	}
 
 	// ----- ЗАПРЕЩЕНО ИЗМЕНЯТЬ КОД МЕТОДОВ, КОТОРЫЕ НАХОДЯТСЯ НИЖЕ -----
